@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:faculty_colloboration/pages/LoginPage.dart';
-import 'package:faculty_colloboration/pages/Home_Page.dart';
 import '../Components/text_field.dart';
 import '../Components/button.dart';
 
@@ -32,7 +31,7 @@ class _RegisterPageState extends State<RegisterPage> {
   // checking validity of the data filled i.e, the format of the data is correct.
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => HomePage(onTap: widget.onTap,)),
+      MaterialPageRoute(builder: (context) => LoginPage(onTap: widget.onTap)),
     );
     
   }
@@ -40,7 +39,7 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
           child: Padding(
@@ -51,8 +50,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 children: [
                   //logo
                   Icon(
-                    Icons.person,
+                    Icons.person_outlined,
                     size: 100,
+                    color: Colors.blueAccent,
                   ),
                   const SizedBox(height: 50),
                   //welcome back message

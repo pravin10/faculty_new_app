@@ -1,5 +1,5 @@
 
-import 'package:faculty_colloboration/pages/Home_Page.dart';
+import 'package:faculty_colloboration/pages/Profile_Page.dart';
 import 'package:flutter/material.dart';
 import 'package:faculty_colloboration/Components/text_field.dart';
 import 'package:faculty_colloboration/Components/button.dart';
@@ -23,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
   void SignIn() async{
       Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => HomePage(onTap: widget.onTap),
+      MaterialPageRoute(builder: (context) => ProfilePage(),
     ));
     
     
@@ -42,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       //resizeToAvoidBottomInset: false, 
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Colors.white,
       body: SafeArea(
           child: Center(
             child: Padding(
@@ -52,8 +52,9 @@ class _LoginPageState extends State<LoginPage> {
                 children: [
                   //logo
                   Icon(
-                    Icons.person,
+                    Icons.person_outlined,
                     size: 100,
+                    color: Colors.pinkAccent[100],
                     ),
                   const SizedBox(height: 25),
                   //welcome back message
