@@ -1,36 +1,40 @@
-//import 'package:firebase_auth/firebase_auth.dart';
 import 'package:faculty_colloboration/pages/LoginPage.dart';
 import 'package:flutter/material.dart';
 
-//import 'package:research_app/Pages/register_page.dart';
 
-
-class HomePage extends StatefulWidget {
-
+class HomePage extends StatelessWidget {
   final Function()? onTap;
-  const HomePage({super.key, required this.onTap});
 
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-class _HomePageState extends State<HomePage> {
+  HomePage({this.onTap});
 
-  void SignOut(){
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (context) => LoginPage(onTap: widget.onTap),
-    ),
-    ); 
-  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(" Home Page "),
-      actions: [
-        IconButton(
-          onPressed: SignOut, 
-          icon: Icon(Icons.logout))
-      ],),
+      appBar: AppBar(
+        title: Text("Home Page"),
+        backgroundColor: Colors.pink[200],
+        actions: [
+          IconButton(
+            icon: Icon(Icons.logout),
+            onPressed: () {
+              // Navigate to the login page when the logout icon is clicked
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => LoginPage(onTap: onTap)),
+              );
+            },
+          ),
+        ],
+      ),
+      body: Center(
+        child: Text("Welcome to the Home Page!"),
+      ),
     );
   }
+}
+
+void main() {
+  runApp(MaterialApp(
+    home: HomePage(),
+  ));
 }
