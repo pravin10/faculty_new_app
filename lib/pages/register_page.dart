@@ -52,7 +52,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   Icon(
                     Icons.person_outlined,
                     size: 100,
-                    color: Colors.blueAccent,
+                    color: Colors.blue[300],
                   ),
                   const SizedBox(height: 50),
                   //welcome back message

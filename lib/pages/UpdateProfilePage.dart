@@ -27,7 +27,7 @@ class _UpdateProfilePageState extends State<UpdateProfilePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Update Profile"),
-        backgroundColor: Colors.pink[200],
+        backgroundColor: Colors.blue[300],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -36,7 +36,7 @@ class _UpdateProfilePageState extends State<UpdateProfilePage> {
             SizedBox(height: 20),
             Text(
               "Skills",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600,color: Color.fromARGB(255, 34, 85, 126)),
             ),
             MyTextField(
               controller: _skillsController,
@@ -46,7 +46,7 @@ class _UpdateProfilePageState extends State<UpdateProfilePage> {
             SizedBox(height: 20),
             Text(
               "About",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: Color.fromARGB(255, 34, 85, 126)),
             ),
             MyTextField(
               controller: _aboutController,
@@ -56,7 +56,7 @@ class _UpdateProfilePageState extends State<UpdateProfilePage> {
             SizedBox(height: 20),
             Text(
               "Experience",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600,color: Color.fromARGB(255, 34, 85, 126)),
             ),
             MyTextField(
               controller: _experienceController,
@@ -66,7 +66,7 @@ class _UpdateProfilePageState extends State<UpdateProfilePage> {
             SizedBox(height: 20),
             Text(
               "Interests of Study",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600,color: Color.fromARGB(255, 34, 85, 126)),
             ),
             Wrap(
               spacing: 8.0,
@@ -84,9 +84,9 @@ class _UpdateProfilePageState extends State<UpdateProfilePage> {
                       }
                     });
                   },
-                  backgroundColor: isSelected ? Colors.pink[200] : null,
+                  backgroundColor: isSelected ? Colors.pinkAccent[100] : null,
                   selectedColor:
-                      Colors.pink[200], // Set the selected color explicitly
+                      Colors.pink[100], // Set the selected color explicitly
                 );
               }).toList(),
             ),
