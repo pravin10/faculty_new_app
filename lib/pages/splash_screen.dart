@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
       // Navigate to the new page after the delay
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => LoginPage(onTap: null,)),
+        MaterialPageRoute(builder: (context) => LoginPage(onTap: null)),
       );
     });
   }
@@ -46,11 +46,18 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Your logo or image goes here
-            Image.asset(
-              'assets/logo.png', // Replace with the path to your logo image
-              width: 150,
-              height: 150,
+            // Wrap the Image.asset with a CircleAvatar
+            CircleAvatar(
+              radius: 75, // Adjust the radius as needed
+              backgroundColor: Colors.blue, // Add background color if needed
+              child: ClipOval(
+                child: Image.asset(
+                  'assets/logo.png', // Replace with the path to your logo image
+                  width: 150,
+                  height: 150,
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
             SizedBox(height: 20),
             Text(
@@ -66,4 +73,3 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }
-

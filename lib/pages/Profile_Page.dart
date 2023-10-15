@@ -12,13 +12,13 @@ class ProfilePage extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("Profile"),
-          backgroundColor: Colors.pink[200],
+          backgroundColor: Colors.blue[300],
           actions: [
             TextButton(
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
+                  MaterialPageRoute(builder: (context) => MyApp()),
                 );
               },
               child: Text(
@@ -84,7 +84,7 @@ class ProfilePage extends StatelessWidget {
                   child: Text("Update Profile"),
                   style: ButtonStyle(
                     backgroundColor:
-                        MaterialStateProperty.all<Color>(Color(0xFFF48FB1)),
+                        MaterialStateProperty.all<Color>(Color.fromARGB(255, 100, 181, 246)),
                   ),
                 ),
               ],

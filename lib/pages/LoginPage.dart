@@ -1,5 +1,6 @@
 
 import 'package:faculty_colloboration/pages/Profile_Page.dart';
+import 'package:faculty_colloboration/pages/login_with_monile.dart';
 import 'package:flutter/material.dart';
 import 'package:faculty_colloboration/Components/text_field.dart';
 import 'package:faculty_colloboration/Components/button.dart';
@@ -41,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //resizeToAvoidBottomInset: false, 
+      //resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       body: SafeArea(
           child: Center(
@@ -54,7 +55,7 @@ class _LoginPageState extends State<LoginPage> {
                   Icon(
                     Icons.person_outlined,
                     size: 100,
-                    color: Colors.pinkAccent[100],
+                    color: Colors.blue[300],
                     ),
                   const SizedBox(height: 25),
                   //welcome back message
@@ -74,7 +75,34 @@ class _LoginPageState extends State<LoginPage> {
                   //signin button
                   MyButton(onTap: SignIn, 
                   text: 'Sign in'),
-      
+                  const SizedBox(height: 25),
+                  Text('OR',style: TextStyle(fontSize: 20, color: Colors.grey),),
+                  const SizedBox(height: 25),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Signin with',
+                        style: TextStyle(color: Colors.grey[700]),
+                      ),
+                      
+                      const SizedBox(width: 4,),
+                      GestureDetector(
+                        onTap:() {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => LoginWithMobile(onTap: null),
+                            ));
+                          }
+                          ,
+                        child: Text(
+                          'Mobile number',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold, 
+                            color: Colors.blue),
+                            )
+                          ),
+                    ],),
                   const SizedBox(height: 25),                  
                   //go to register page 
                   Row(
