@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "405088979256",
+    "project_id": "facultyapp-15f6c",
+    "storage_bucket": "facultyapp-15f6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405088979256:android:0145062d5f4cbbdb8399cd",
+        "android_client_info": {
+          "package_name": "com.example.faculty_colloboration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405088979256-5dd84gi82v3t5ceieklioj936qs7dpuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3CLcZ1Juswk4lmDlJU5OZxlHV0qsNArU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405088979256-5dd84gi82v3t5ceieklioj936qs7dpuv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "405088979256-0uiko8guqlk80rgepc7piarkai2t65ag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.facultyColloboration.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405088979256:android:5d41846bcf5a288a8399cd",
+        "android_client_info": {
+          "package_name": "com.example.project_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405088979256-5dd84gi82v3t5ceieklioj936qs7dpuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3CLcZ1Juswk4lmDlJU5OZxlHV0qsNArU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405088979256-5dd84gi82v3t5ceieklioj936qs7dpuv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "405088979256-0uiko8guqlk80rgepc7piarkai2t65ag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.facultyColloboration.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

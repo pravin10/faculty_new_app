@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:faculty_colloboration/Components/button.dart';
-import 'package:faculty_colloboration/Components/text_field.dart';
+import 'package:faculty_colloboration/widgets/button.dart';
+import 'package:faculty_colloboration/widgets/text_field.dart';
 
 class UpdateProfilePage extends StatefulWidget {
   @override
